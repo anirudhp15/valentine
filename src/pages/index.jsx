@@ -19,7 +19,7 @@ export default function Home() {
         />
 
         {/* Content Overlay */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center p-8 pt-20 text-center text-white bg-black bg-opacity-60">
+        <div className="absolute inset-0 flex flex-col items-center justify-center p-8 pt-40 text-center text-white bg-black bg-opacity-60">
           {/* Title */}
           <motion.h1
             initial={{ opacity: 0, scale: 0.8 }}
