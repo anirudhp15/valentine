@@ -45,7 +45,7 @@ export default function Layout({ children }) {
       {/* Footer */}
       <footer className="w-full p-4 text-center bg-gray-100 ">
         <hr className="mb-1 border-2 border-gray-300" />
-        <p className="text-sm text-gray-600">© 2025 I love you Pooza lol</p>
+        <p className="text-sm text-gray-600">© 2025 Pooja & Potts</p>
       </footer>
     </motion.div>
   );
