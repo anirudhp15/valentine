@@ -18,20 +18,20 @@ export default function Layout({ children }) {
       {/* Header */}
       <header className="w-full bg-red-500 text-white p-4 shadow-md sticky top-0 z-50">
         <div className="max-w-3xl mx-auto flex justify-between items-center">
-          <h1 className="text-lg font-bold">Pooja's Valentine’s Adventure</h1>
+          <h1 className="text-lg font-bold">Pooja's MrBeast Challenge</h1>
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden focus:outline-none"
           >
             ☰
           </button>
-          <nav className="hidden md:flex space-x-4">
+          <nav className="hidden md:flex font-semibold space-x-4">
             <NavLinks />
           </nav>
         </div>
         {/* Mobile Menu */}
         {isOpen && (
-          <nav className="md:hidden mt-2 bg-red-600 p-2 rounded-lg">
+          <nav className="md:hidden mt-2 flex flex-row justify-between font-semibold bg-red-600 p-2 rounded-lg">
             <NavLinks />
           </nav>
         )}
@@ -43,9 +43,9 @@ export default function Layout({ children }) {
       </main>
 
       {/* Footer */}
-      <footer className="w-full bg-gray-100 p-4 text-center mt-4">
-        <hr className="border-gray-300" />
-        <p className="text-sm text-gray-600">© 2025 Valentine Project</p>
+      <footer className="w-full bg-gray-100 p-4 text-center ">
+        <hr className="border-gray-300 border-2 mb-1" />
+        <p className="text-sm text-gray-600">© 2025 I love you Pooza</p>
       </footer>
     </motion.div>
   );
