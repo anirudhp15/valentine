@@ -13,7 +13,7 @@ export default function Layout({ children }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen flex flex-col"
+      className="min-h-screen w-full flex flex-col"
     >
       {/* Header */}
       <header className="w-full bg-red-500 text-white p-4 shadow-md sticky top-0 z-50">
@@ -38,7 +38,7 @@ export default function Layout({ children }) {
       </header>
 
       {/* Main Content */}
-      <main className="flex-grow flex flex-col items-center p-4 max-w-3xl mx-auto">
+      <main className="flex-grow flex flex-col items-center w-full mx-auto">
         {children}
       </main>
 
@@ -58,14 +58,14 @@ function NavLinks() {
       <Link className="hover:text-gray-300" href="/">
         Home
       </Link>
-      <Link className="hover:text-gray-300" href="/route1">
-        Route 1
+      <Link className="hover:text-gray-300" href="/london">
+        London
       </Link>
-      <Link className="hover:text-gray-300" href="/route2">
-        Route 2
+      <Link className="hover:text-gray-300" href="/heist">
+        Heist
       </Link>
-      <Link className="hover:text-gray-300" href="/route3">
-        Route 3
+      <Link className="hover:text-gray-300" href="/mrbeast">
+        Mr Beast
       </Link>
       <Link className="hover:text-gray-300" href="/valentines">
         Valentine
