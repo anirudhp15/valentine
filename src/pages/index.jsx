@@ -19,7 +19,7 @@ export default function Home() {
         />
 
         {/* Content Overlay */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center text-white bg-black bg-opacity-60">
+        <div className="absolute inset-0 flex flex-col items-center justify-center p-8 pt-20 text-center text-white bg-black bg-opacity-60">
           {/* Title */}
           <motion.h1
             initial={{ opacity: 0, scale: 0.8 }}
@@ -34,7 +34,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2 }}
-            className="mt-6 text-xl text-gray-300"
+            className="px-8 mt-6 text-xl text-gray-300"
           >
             pooja, you have exactly 24 hours to accept this mission. if you fail
             to act,{" "}
@@ -61,7 +61,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.8 }}
-            className="mt-4 italic text-gray-300"
+            className="px-8 mt-4 italic text-gray-300"
           >
             this mission is highly classified. if you accept, you will be
             required to: travel internationally, recover an extremely rare item
@@ -83,7 +83,7 @@ export default function Home() {
                   className="w-24 h-auto rounded-full"
                 />
               </div>
-              <p className="mt-2 text-lg font-semibold">Pooja</p>
+              <p className="mt-2 text-lg font-semibold">You</p>
             </motion.div>
 
             <motion.div
@@ -114,7 +114,7 @@ export default function Home() {
 
           {/* Call to Action Button */}
           <motion.div
-            className="mt-6"
+            className="mt-4 mb-24"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.5 }}

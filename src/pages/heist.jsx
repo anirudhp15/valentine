@@ -19,18 +19,18 @@ export default function Heist() {
         <img
           src={AUCTION_BACKGROUND}
           alt="Luxury Auction Hall"
-          className="w-full h-full object-cover"
+          className="object-cover w-full h-full"
         />
 
         {/* Content Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center p-6 text-white text-center">
+        <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-center text-white bg-black bg-opacity-50">
           <motion.h1
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-            className="text-4xl font-bold"
+            className="text-3xl font-bold"
           >
-            The Exclusive Fancy Smancy Auction 🎭
+            you pullup to the exclusive fancy smancy auction 🎭 ✨
           </motion.h1>
 
           <motion.p
@@ -50,9 +50,10 @@ export default function Heist() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5 }}
-            className="italic mt-2 text-gray-300"
+            className="mt-2 italic text-gray-300"
           >
-            but suddenly—a freaky ass masked thief grabs the dress and vanishes!
+            but suddenly—a freaky ass masked thief grabs the dress and vanishes
+            into the night!
           </motion.p>
 
           {/* Reveal Heist Scene */}
@@ -61,7 +62,7 @@ export default function Heist() {
               onClick={() => setShowHeist(true)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="mt-6 px-6 py-3 bg-yellow-400 text-black font-semibold text-lg rounded-xl shadow-lg hover:bg-yellow-500 transition-all"
+              className="px-6 py-3 mt-6 text-lg font-semibold text-black transition-all bg-yellow-400 shadow-lg rounded-xl hover:bg-yellow-500"
             >
               Witness the Heist
             </motion.button>
@@ -73,14 +74,14 @@ export default function Heist() {
               initial={{ opacity: 0, y: -50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="mt-20 flex flex-col items-center relative"
+              className="relative flex flex-col items-center mt-20"
             >
               {/* Speech Bubble */}
               <motion.div
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.2, delay: 2.5 }}
-                className="absolute -top-20 left-1/2 transform -translate-x-1/2 bg-white text-black text-md font-semibold px-4 py-2 rounded-lg shadow-md border border-gray-300 w-40"
+                className="absolute w-40 px-4 py-2 font-semibold text-black transform -translate-x-1/2 bg-white border border-gray-300 rounded-lg shadow-md -top-20 left-1/2 text-md"
               >
                 <p className="text-center">
                   "youuu need me to get that shit togetherrr <br /> so we can
@@ -93,9 +94,9 @@ export default function Heist() {
               <img
                 src={THIEF}
                 alt="Mysterious Thief"
-                className="w-52 h-auto shadow-lg"
+                className="h-auto shadow-lg w-52"
               />
-              <p className="mt-4 text-lg text-gray-200 italic">
+              <p className="mt-4 text-lg italic text-gray-200">
                 too late! the freaky ass thief disappears into the crowd... but
                 not before singing his mating call
               </p>
@@ -108,27 +109,19 @@ export default function Heist() {
                   transition={{ duration: 1.5 }}
                   className="flex flex-col items-center"
                 >
-                  <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center border-4 border-gray-500">
-                    <img src={POOJA} alt="Pooja" className="w-24 h-auto" />
+                  <div className="flex items-center justify-center w-24 h-24 bg-white border-4 border-gray-500 rounded-full">
+                    <img
+                      src={POOJA}
+                      alt="Pooja"
+                      className="w-24 h-auto rounded-full"
+                    />
                   </div>
-                  <p className="mt-2 text-sm font-semibold">Pooja</p>
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, x: 50 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1.5 }}
-                  className="flex flex-col items-center"
-                >
-                  <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center border-4 border-yellow-500">
-                    <img src={MRBEAST} alt="Mr. Beast" className="w-20 h-20" />
-                  </div>
-                  <p className="mt-2 text-sm font-semibold">Mr. Beast</p>
+                  <p className="mt-2 text-sm font-semibold">You</p>
                 </motion.div>
               </div>
 
               {/* Decision Buttons - How Does Pooja React? */}
-              <h2 className="text-2xl font-bold mt-6">
+              <h2 className="mt-6 text-2xl font-bold">
                 how do you handle this?
               </h2>
 
@@ -137,7 +130,7 @@ export default function Heist() {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="px-6 py-3 bg-white text-purple-700 font-semibold text-lg rounded-xl shadow-lg hover:bg-gray-200 transition-all"
+                    className="px-6 py-3 text-lg font-semibold text-purple-700 transition-all bg-white shadow-lg rounded-xl hover:bg-gray-200"
                   >
                     go undercover & track the rascal 🕵️‍♀️
                   </motion.button>
@@ -146,7 +139,7 @@ export default function Heist() {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="px-6 py-3 bg-white text-red-700 font-semibold text-lg rounded-xl shadow-lg hover:bg-gray-200 transition-all"
+                    className="px-6 py-3 text-lg font-semibold text-red-700 transition-all bg-white shadow-lg rounded-xl hover:bg-gray-200"
                   >
                     chase the silly thief immediately 🚨
                   </motion.button>

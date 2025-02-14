@@ -82,7 +82,7 @@ export default function MrBeast() {
                 className="w-48 h-auto shadow-lg"
               />
               <p className="mt-4 text-lg italic text-gray-200">
-                HA You thought. Pooja, this was all a huge test
+                HA You thought it was drake? Nah Pooja, this was all a huge test
               </p>
 
               <motion.p
@@ -96,8 +96,9 @@ export default function MrBeast() {
                   real surprise
                 </span>
                 . and you passed! even if you were being a little bit annoying
-                last night —which ani sincerely apologizes for instigating -
-                this was all to see if you could handle...{" "}
+                to ani last night — which i know he feels really sorry for
+                instigating and being annoying too - this was all to see if you
+                could handle...{" "}
                 <span className="font-semibold text-red-500">the truth</span>
               </motion.p>
 
@@ -131,9 +132,13 @@ export default function MrBeast() {
                   className="flex flex-col items-center"
                 >
                   <div className="flex items-center justify-center w-24 h-24 bg-white border-4 border-gray-500 rounded-full">
-                    <img src={POOJA} alt="Pooja" className="w-24 h-auto" />
+                    <img
+                      src={POOJA}
+                      alt="Pooja"
+                      className="w-24 h-auto rounded-full"
+                    />
                   </div>
-                  <p className="mt-2 text-sm font-semibold">Pooja</p>
+                  <p className="mt-2 text-sm font-semibold">You</p>
                 </motion.div>
               </div>
 

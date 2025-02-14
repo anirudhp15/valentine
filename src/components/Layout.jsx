@@ -13,11 +13,11 @@ export default function Layout({ children }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen w-full flex flex-col"
+      className="flex flex-col w-full min-h-screen"
     >
       {/* Header */}
-      <header className="w-full bg-red-500 text-white p-4 shadow-md sticky top-0 z-50">
-        <div className="max-w-3xl mx-auto flex justify-between items-center">
+      <header className="sticky top-0 z-50 w-full p-4 text-white bg-red-500 shadow-md">
+        <div className="flex items-center justify-between max-w-3xl mx-auto">
           <h1 className="text-lg font-bold">Pooja's MrBeast Challenge</h1>
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -25,27 +25,27 @@ export default function Layout({ children }) {
           >
             ☰
           </button>
-          <nav className="hidden md:flex font-semibold space-x-4">
+          <nav className="hidden space-x-4 font-semibold md:flex">
             <NavLinks />
           </nav>
         </div>
         {/* Mobile Menu */}
         {isOpen && (
-          <nav className="md:hidden mt-2 flex flex-row justify-between font-semibold bg-red-600 p-2 rounded-lg">
+          <nav className="flex flex-row justify-between p-2 mt-2 font-semibold bg-red-600 rounded-lg md:hidden">
             <NavLinks />
           </nav>
         )}
       </header>
 
       {/* Main Content */}
-      <main className="flex-grow flex flex-col items-center w-full mx-auto">
+      <main className="flex flex-col items-center flex-grow w-full mx-auto">
         {children}
       </main>
 
       {/* Footer */}
-      <footer className="w-full bg-gray-100 p-4 text-center ">
-        <hr className="border-gray-300 border-2 mb-1" />
-        <p className="text-sm text-gray-600">© 2025 I love you Pooza</p>
+      <footer className="w-full p-4 text-center bg-gray-100 ">
+        <hr className="mb-1 border-2 border-gray-300" />
+        <p className="text-sm text-gray-600">© 2025 I love you Pooza lol</p>
       </footer>
     </motion.div>
   );
