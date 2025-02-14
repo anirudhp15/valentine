@@ -1,14 +1,20 @@
-import { motion } from "framer-motion";
+// pages/index.js
+import Layout from "../components/Layout";
+import InteractiveStep from "../components/InteractiveStep";
 
-export default function MyPage() {
+export default function Home() {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <h1>Welcome to this special Valentine’s App!</h1>
-    </motion.div>
+    <Layout>
+      <h1>Welcome to the Valentine Adventure!</h1>
+      <p>
+        Hey Pooja! This is no ordinary website—it's an interactive journey
+        crafted just for you.
+      </p>
+
+      <InteractiveStep
+        text="Ready to begin your quest for romance and laughter?"
+        nextPath="/route1"
+      />
+    </Layout>
   );
 }
